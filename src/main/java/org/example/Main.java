@@ -7,9 +7,10 @@ public class Main {
         System.out.println(jaemin.getName());
         System.out.println(jaemin.getAge());
 
-        Person kitae = new Person("기태", 52);
-        System.out.println(kitae);
-        System.out.println(kitae.getName());
+        Person hong = new Person("홍길동", 100);
+        System.out.println(hong);
+        System.out.println(hong.getName());
+
 
     }
 }
