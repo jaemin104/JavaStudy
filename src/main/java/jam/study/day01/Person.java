@@ -1,4 +1,4 @@
-package org.example;
+package jam.study.day01;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

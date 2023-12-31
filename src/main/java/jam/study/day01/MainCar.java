@@ -1,4 +1,6 @@
-package org.example;
+package jam.study.day01;
+
+import jam.study.day01.Car;
 
 public class MainCar {
     public static void main(String[] args) {

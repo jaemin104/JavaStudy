@@ -1,4 +1,4 @@
-package org.example;
+package jam.study.day01;
 /*한줄복사 커맨드d
 생성자 게터세터 커맨드n
 실행 컨트롤r
