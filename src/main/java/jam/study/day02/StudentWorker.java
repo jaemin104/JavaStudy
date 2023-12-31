@@ -1,5 +1,5 @@
 package jam.study.day02;
 
-public class StudentWorker extends Student {
-    
+public class StudentWorker  {
+
 }

@@ -7,5 +7,6 @@ public class MainStudent {
         System.out.println(jaemin.getAge());
         System.out.println(jaemin.getSchool());
         System.out.println(jaemin.getStdNumber());
+        System.out.println(jaemin);
     }
 }
