@@ -12,5 +12,6 @@ public class MainPerson {
                 .role("막내딸")
                 .weight(44)
                 .build();
+        System.out.println(p);
     }
 }
