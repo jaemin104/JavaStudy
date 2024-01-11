@@ -6,7 +6,7 @@ public class SuperObject {
         draw();
     }
     public void draw() {
-        name = "Super";
+        //name = "Super";
         System.out.println(name);
     }
 }

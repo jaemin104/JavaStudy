@@ -5,12 +5,18 @@ public class SubObject extends SuperObject {
 
     public void draw() {
         name = "Sub";
+        super.name = "슈퍼";
+        super.draw();
         System.out.println(name);
     }
 
     public static void main(String[] args) {
-        SuperObject b = new SuperObject();
-        b.paint();
+        /*SuperObject a = new SuperObject();
+        a.paint();
+        SubObject b = new SubObject();
+        b.paint();*/
+        SuperObject c = new SubObject();
+        c.paint();
     }
 
 }
