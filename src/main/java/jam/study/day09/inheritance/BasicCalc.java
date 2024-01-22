@@ -27,4 +27,5 @@ public class BasicCalc implements IB {
     public int abs(int a) {
         return 0;
     }
+
 }
