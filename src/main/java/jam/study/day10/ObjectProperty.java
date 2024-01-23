@@ -1,7 +1,7 @@
 package jam.study.day10;
 
 public class ObjectProperty {
-    public static void main(String[] args) {
+    public static void main(StringClass[] args) {
 
         Point p = new Point(10, 20);
         Point p2 = new Point(10, 20);
