@@ -5,19 +5,20 @@ public class Lotto {
 
         int[] lotto = new int[6];
 
-        for (int i = 0; i < lotto.length; i++) {
+    l1:    for (int i = 0; i < lotto.length; i++) {
             int num = (int)(Math.random() * 45) + 1;
-            System.out.println(num);
-            for (int j = 0; j < lotto.length; j++) {
+            System.out.print(num + " ");
+            for (int j = 0; j < i; j++) {
                 if (num == lotto[j]) {
-                    break;
-                } else {
-                    lotto[i] = num;
+                    i--;
+                    continue l1;
                 }
+
             }
-            i = i - 1;
+            lotto[i] = num;
 
         }
+        System.out.println();
 
         for (int i = 0; i < lotto.length; i++) {
             System.out.print(lotto[i] + " ");
