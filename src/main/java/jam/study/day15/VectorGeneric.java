@@ -1,6 +1,7 @@
 package jam.study.day15;
 
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.Vector;
 
 public class VectorGeneric {
@@ -17,6 +18,7 @@ public class VectorGeneric {
             System.out.println(next.intValue());
         }
 
+
         System.out.println("======================");
 
         Vector<String> vecStr = new Vector<>();
@@ -30,6 +32,24 @@ public class VectorGeneric {
 
         for (String s : vecStr) {
             System.out.println(s);
+        }
+
+        System.out.println("================");
+
+        //Stream
+        vecStr.stream().forEach(System.out::println);
+
+        System.out.println("================");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("찾고 싶은 단어를 입력하세요 : ");
+        String findWord = scanner.next();
+
+        if(vecStr.contains(findWord)) {
+            int index = vecStr.indexOf(findWord);
+            System.out.println(findWord + "은 " + index + "번째에 존재합니다.");
+        } else {
+            System.out.println(findWord + "은 존재하지 않습니다.");
         }
     }
 }
