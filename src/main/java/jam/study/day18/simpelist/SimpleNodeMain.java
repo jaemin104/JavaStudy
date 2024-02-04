@@ -11,6 +11,9 @@ public class SimpleNodeMain {
         mon.link = fri;
         fri.link = sun;
 
-        
+        while (week != null) {
+            System.out.println(week.data);
+            week = week.link;
+        }
     }
 }
