@@ -16,6 +16,11 @@ public class SimpleNodeMain {
         wed.link = week.link;
         week.link = wed;
 
+        Node thu = new Node("목", null);
+
+        thu.link = week.link.link;
+        week.link.link = thu;
+
         while (week != null) {
             System.out.println(week.data);
             week = week.link;
