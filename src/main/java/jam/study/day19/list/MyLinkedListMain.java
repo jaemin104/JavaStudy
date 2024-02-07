@@ -11,6 +11,7 @@ public class MyLinkedListMain {
 
         System.out.println("(2) 수 노드 뒤에 금 노드 삽입하기");
         ListNode pre = list.searchNode("수");
+        System.out.println(pre.day);
 
         if (pre == null) {
             System.out.println("검색 실패");
