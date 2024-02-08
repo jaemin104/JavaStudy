@@ -19,5 +19,13 @@ public class MyLinkedListMain {
             list.insertMiddleNode(pre, "금");
             list.printList();
         }
+
+        System.out.println("(3) 첫번째 위치에 '시작'이라는 단어를 삽입하세요.");
+        list.insertFirstNode("시작");
+        list.printList();
+
+        System.out.println("(4) 수 노드를 삭제하세요.");
+        ListNode deleteNode = list.searchNode("수");
+        list.deleteNode(deleteNode);
     }
 }

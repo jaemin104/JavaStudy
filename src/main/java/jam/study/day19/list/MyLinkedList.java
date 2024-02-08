@@ -51,5 +51,27 @@ public class MyLinkedList {
     }
 
     public void insertMiddleNode(ListNode pre, String day) {
+        ListNode newNode = new ListNode(day);
+
+        if(head == null) {
+            head = newNode;
+        } else {
+            newNode.link = pre.link;
+            pre.link = newNode;
+        }
+    }
+
+    public void insertFirstNode(String day) {
+        ListNode newNode = new ListNode(day);
+        newNode.link = head;
+        head = newNode;
+    }
+
+    public void deleteNode(ListNode deleteNode) {
+        if (head == null) {
+            System.out.println("리스트에 노드가 없습니다.");
+        } else {
+            
+        }
     }
 }
