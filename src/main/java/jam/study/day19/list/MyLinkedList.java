@@ -71,7 +71,7 @@ public class MyLinkedList {
         if (head == null) {
             System.out.println("리스트에 노드가 없습니다.");
         } else {
-            
+
         }
     }
 }
