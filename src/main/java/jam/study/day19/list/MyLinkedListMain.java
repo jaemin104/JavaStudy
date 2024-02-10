@@ -32,5 +32,9 @@ public class MyLinkedListMain {
         deleteNode = list.searchNode("시작");
         list.deleteNode(deleteNode);
         list.printList();
+
+        System.out.println("(5) 거꾸로 출력하세요.");
+        list.reverse();
+        list.printList();
     }
 }

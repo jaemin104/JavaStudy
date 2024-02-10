@@ -123,4 +123,18 @@ public class MyLinkedList {
 
 
     }
+
+    public void reverse() {
+        ListNode next = head;
+        ListNode current = null;
+        ListNode pre = null;
+
+        while (next != null) {
+            pre = current;
+            current = next;
+            next = next.link;
+            current.link = pre;
+        }
+        head = current;
+    }
 }
