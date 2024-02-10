@@ -68,10 +68,59 @@ public class MyLinkedList {
     }
 
     public void deleteNode(ListNode deleteNode) {
+        ListNode pre;
+        ListNode temp = head;
+
         if (head == null) {
             System.out.println("리스트에 노드가 없습니다.");
+        } else if (head == deleteNode) {
+            head = deleteNode.link;
         } else {
+            while (temp.link != null) {
+                if (temp.link == deleteNode) {
+                    pre = temp;
+                    pre.link = deleteNode.link;
+                } else {
+                    temp = temp.link;
+                }
+            }
 
         }
+
+//        if (head == null) {
+//            System.out.println("리스트에 노드가 없습니다.");
+//        } else {
+//            if (temp.link == null) {
+//                pre = null;
+//                pre.link = deleteNode.link;
+//            } else {
+//                L1 : while (temp.link != null) {
+//                    temp = temp.link;
+//                    if (temp.link == deleteNode) {
+//                        pre = temp;
+//                        pre.link = deleteNode.link;
+//                        break L1;
+//                    }
+//                }
+//
+//            }
+//
+//
+//        }
+
+//        if (head == null) {
+//            System.out.println("리스트에 노드가 없습니다.");
+//        } else {
+//            while (temp != null) {
+//                if (temp == deleteNode) {
+//                    temp = head.link;
+//                } else if (temp.link == deleteNode) {
+//                    pre = temp;
+//                    pre.link = temp.link;
+//                }
+//            }
+//        }
+
+
     }
 }

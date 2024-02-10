@@ -5,6 +5,10 @@ public class MyLinkedListMain {
         MyLinkedList list = new MyLinkedList();
         System.out.println("(1) 공백 리스트에 노드 3개 삽입하기");
         list.insertLastNode("월");
+        list.printList();
+        ListNode deleteNode = list.searchNode("월");
+        list.deleteNode(deleteNode);
+        list.printList();
         list.insertLastNode("수");
         list.insertLastNode("일");
         list.printList();
@@ -24,8 +28,9 @@ public class MyLinkedListMain {
         list.insertFirstNode("시작");
         list.printList();
 
-        System.out.println("(4) 수 노드를 삭제하세요.");
-        ListNode deleteNode = list.searchNode("수");
+        System.out.println("(4) 시작 노드를 삭제하세요.");
+        deleteNode = list.searchNode("시작");
         list.deleteNode(deleteNode);
+        list.printList();
     }
 }
