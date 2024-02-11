@@ -8,8 +8,8 @@ import lombok.ToString;
 @Setter
 @ToString
 public class MyNode {
-    private String data;
-    private MyNode link;
+    String data;
+    MyNode link;
 
     public MyNode(String data) {
         this.data = data;
