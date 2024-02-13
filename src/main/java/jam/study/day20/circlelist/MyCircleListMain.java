@@ -26,9 +26,12 @@ public class MyCircleListMain {
         cl.printList();
 
         System.out.println("(3) 수 노드를 삭제하세요.");
-        MyNode deletePreNode = cl.searchPreNode("수");
-        System.out.println(deletePreNode.data);
-        MyNode deleteNode = cl.searchNode("수");
+        cl.printList();
+        MyNode deletePreNode = cl.searchPreNode("홍길동");
+        System.out.println("지우기 전 노드 : " + deletePreNode.data);
+        MyNode deleteNode = cl.searchNode("홍길동");
+        System.out.println("지울 노드 : " + deleteNode.data);
+
         cl.deleteNode(deletePreNode, deleteNode);
         cl.printList();
     }

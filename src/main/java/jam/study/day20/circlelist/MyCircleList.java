@@ -69,30 +69,27 @@ public class MyCircleList {
 
     public MyNode searchPreNode(String data) {
         MyNode temp = cl;
+        MyNode pre;
+
         while (true) {
             if (temp.link.data == data) {
-                return temp;
+                pre = temp;
+                return pre;
             } else {
                 temp = temp.link;
             }
-            return temp;
         }
     }
 
 
     public void deleteNode(MyNode deletePreNode, MyNode deleteNode) {
-        MyNode temp = cl;
 
         if (deleteNode == cl) {
             deletePreNode.link = deleteNode.link;
             cl = deleteNode.link;
         } else {
-            if (temp.link == deleteNode) {
-                deletePreNode = temp;
-                deletePreNode.link = deleteNode.link;
-            } else {
-                temp = temp.link;
-            }
+            deletePreNode.link = deleteNode.link;
+
 
         }
     }
