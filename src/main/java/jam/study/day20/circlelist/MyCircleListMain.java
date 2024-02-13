@@ -25,14 +25,11 @@ public class MyCircleListMain {
         cl.insertMiddleNode(pre, "김재민");
         cl.printList();
 
-        System.out.println("(3) 수 노드를 삭제하세요.");
+        System.out.println("(3) 일 노드를 삭제하세요.");
         cl.printList();
-        MyNode deletePreNode = cl.searchPreNode("홍길동");
+        MyNode deletePreNode = cl.searchPreNode("김재민");
         System.out.println("지우기 전 노드 : " + deletePreNode.data);
-        MyNode deleteNode = cl.searchNode("홍길동");
-        System.out.println("지울 노드 : " + deleteNode.data);
-
-        cl.deleteNode(deletePreNode, deleteNode);
+        cl.deleteNode(deletePreNode);
         cl.printList();
     }
 }
