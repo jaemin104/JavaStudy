@@ -39,18 +39,61 @@ public class MyCircleList {
         System.out.println();
     }
 
-//    public void printList() {
-//        MyNode temp = cl;
-//        System.out.print("List = (");
-//        while (temp.link != cl) {
-//            System.out.print(temp.getData());
-//            temp = temp.link;
-//            if (temp != null) {
-//                System.out.print(", ");
-//            }
-//        }
-//        System.out.println(")");
-//    }
+
+    public MyNode searchNode(String data) {
+        MyNode temp = cl;
+
+        while (true) {
+            if (temp.data == data) {
+                return temp;
+            }
+            temp = temp.link;
+            if (temp.link == cl) {
+                break;
+            }
+        }
+        return temp;
+    }
 
 
+    public void insertMiddleNode(MyNode pre, String data) {
+        MyNode newNode = new MyNode(data);
+
+        if(cl == null) {
+            cl = newNode;
+        } else {
+            newNode.link = pre.link;
+            pre.link = newNode;
+        }
+    }
+
+    public MyNode searchPreNode(String data) {
+        MyNode temp = cl;
+        while (true) {
+            if (temp.link.data == data) {
+                return temp;
+            } else {
+                temp = temp.link;
+            }
+            return temp;
+        }
+    }
+
+
+    public void deleteNode(MyNode deletePreNode, MyNode deleteNode) {
+        MyNode temp = cl;
+
+        if (deleteNode == cl) {
+            deletePreNode.link = deleteNode.link;
+            cl = deleteNode.link;
+        } else {
+            if (temp.link == deleteNode) {
+                deletePreNode = temp;
+                deletePreNode.link = deleteNode.link;
+            } else {
+                temp = temp.link;
+            }
+
+        }
+    }
 }
