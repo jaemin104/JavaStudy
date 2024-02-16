@@ -27,6 +27,8 @@ public class MyDLinkedListMain {
         DLNode deleteNode = week.searchNode("시작");
         week.deleteNode(deleteNode);
         week.printDList();
+
+
     }
 
 }
