@@ -12,6 +12,9 @@ public class LinkedStackMain {
         stack.printStack();
 
         deletedItem = stack.pop();
+        deletedItem = stack.pop();
+        deletedItem = stack.pop();
+        deletedItem = stack.pop();
         if (deletedItem != null) {
             System.out.println(deletedItem);
         }

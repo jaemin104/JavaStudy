@@ -2,7 +2,7 @@ package jam.study.day22;
 
 public class LinkedStack implements MyStack<String> {
 
-    private StackNode top = null;
+    private StackNode<String> top = null;
 
     @Override
     public boolean isEmpty() {
@@ -23,7 +23,13 @@ public class LinkedStack implements MyStack<String> {
 
     @Override
     public String pop() {
-        return null;
+        if (top == null) {
+            System.out.println("pop 할 수 없습니다.");
+            return null;
+        }
+        String data = top.getItem();
+        top = top.getLink();
+        return data;
     }
 
     @Override
@@ -45,4 +51,6 @@ public class LinkedStack implements MyStack<String> {
         }
         System.out.println();
     }
+
+
 }
