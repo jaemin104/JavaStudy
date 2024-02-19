@@ -19,5 +19,6 @@ public class LinkedStackMain {
             System.out.println(deletedItem);
         }
         stack.printStack();
+
     }
 }
