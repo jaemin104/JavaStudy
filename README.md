@@ -12,3 +12,10 @@
 
 * 동적 바인딩
 * super 사용법
+
+## 2024/02/20
+
+* 스택/큐 정리
+* 스택, 큐 - 선형 구조 
+* 스택 : 후입선출 (LIFO : last in first out)
+* 큐 : 선입선출 (FIFO : first in first out)
