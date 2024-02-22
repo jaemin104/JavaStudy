@@ -19,7 +19,7 @@ public class LinkedStack implements MyStack{
     @Override
     public char pop() {
         if(isEmpty()) {
-            System.out.println("Deleting fail! Linked Stack is empty!!");
+            System.out.println("노드가 없습니다.");
             return 0;
         } else {
             char item = top.data;
@@ -32,7 +32,7 @@ public class LinkedStack implements MyStack{
     @Override
     public void delete() {
         if (isEmpty()) {
-            System.out.println("Deleting fail! Linked Stack is empty!!");
+            System.out.println("노드가 없습니다.");
 
         } else {
             top = top.link;
@@ -42,7 +42,7 @@ public class LinkedStack implements MyStack{
     @Override
     public char peek() {
         if(isEmpty()){
-            System.out.println("Peeking fail! Linked Stack is empty!!");
+            System.out.println("노드가 없습니다.");
             return 0;
         } else
             return top.data;
@@ -50,10 +50,10 @@ public class LinkedStack implements MyStack{
 
     public void printStack(){
         if (isEmpty())
-            System.out.printf("Linked Stack is empty!! %n %n");
+            System.out.printf("노드가 없습니다.");
         else {
             StackNode temp = top;
-            System.out.println("Linked Stack>> ");
+            System.out.println("Linked Stack : ");
             while (temp != null) {
                 System.out.printf("\t %c \n", temp.data);
                 temp = temp.link;
